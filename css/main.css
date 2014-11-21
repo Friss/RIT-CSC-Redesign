@@ -1,0 +1,133 @@
+body {
+  padding-bottom: 20px;
+}
+
+.navbar-brand {
+  line-height: 12px;
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+}
+
+.navbar {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.navbar.affix-top {
+  background: none;
+}
+
+.navbar.affix {
+  background: rgba(0,0,0,.5);
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+  color: #fff;
+}
+
+.nav-pills {
+  margin-right: -45px;
+  padding: 20px;
+  padding-right: 0;
+}
+
+.nav-pills>li>a {
+  border: 1px solid #fff;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  max-height: initial;
+  padding: 0;
+}
+
+.in .nav-pills, .collapsing .nav-pills {
+  margin-right: 0;
+  background: rgba(0,0,0,.5);
+}
+
+.in .nav>li, .collapsing .nav>li {
+  float: none;
+  padding: 10px;
+}
+
+.logo {
+  font-family: 'DigitalDream';
+  color: #fff;
+  position: relative;
+  height: 200px;
+  width: 325px;
+  margin: auto;
+  margin-top: 50px;
+  z-index: 2;
+}
+
+.logo span {
+  position: absolute;
+  font-size: 175px;
+}
+
+.logo .first-bracket {
+  left: 0;
+}
+
+.logo .middle-s {
+  left: 115px;
+  bottom: 35px;
+  font-size: 125px;
+}
+
+.logo .second-bracket {
+  left: 195px;
+}
+
+.intro {
+  height: 450px;
+  overflow: hidden;
+  display: table;
+  width: 100%;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.intro:before {
+  background: rgba(0,0,0,.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: '';
+  z-index: 1;
+}
+
+#video {
+  position: absolute;
+  width: 100%;
+  top: -130px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.logo-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  #video {
+    left: initial;
+    width: auto;
+  }
+}
