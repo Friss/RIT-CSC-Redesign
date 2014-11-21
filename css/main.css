@@ -1,5 +1,7 @@
 body {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
+  background: #1abc9c;
+  color: #34495e;
 }
 
 .navbar-brand {
@@ -9,18 +11,13 @@ body {
 }
 
 .navbar {
+  background: none;
   border: none;
   box-shadow: none;
   border-radius: 0;
   margin-bottom: 0;
-}
-
-.navbar.affix-top {
-  background: none;
-}
-
-.navbar.affix {
-  background: rgba(0,0,0,.5);
+  position: absolute;
+  z-index: 200;
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
@@ -96,7 +93,6 @@ body {
   display: table;
   width: 100%;
   position: relative;
-  margin-bottom: 25px;
 }
 
 .intro:before {
@@ -108,6 +104,19 @@ body {
   right: 0;
   content: '';
   z-index: 1;
+}
+
+.intro-container {
+  padding: 0;
+}
+
+.content {
+  background: #edeff1;
+  padding: 25px;
+}
+
+.content .col-md-8 {
+  border-right: 1px solid #1abc9c;
 }
 
 #video {
@@ -122,6 +131,14 @@ body {
 .logo-container {
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
+}
+
+article {
+  padding: 15px 0;
+}
+
+footer {
   text-align: center;
 }
 
