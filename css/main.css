@@ -1,7 +1,11 @@
 body {
   padding-bottom: 50px;
-  background: #1abc9c;
+  background: #3498DB;
   color: #34495e;
+}
+
+a {
+  color: #F39C12;
 }
 
 .navbar-brand {
@@ -116,7 +120,7 @@ body {
 }
 
 .content .col-md-8 {
-  border-right: 1px solid #1abc9c;
+  border-right: 1px solid #F39C12;
 }
 
 #video {
@@ -144,7 +148,7 @@ footer {
 
 @media (max-width: 1024px) {
   #video {
-    left: initial;
+    left: -350px;;
     width: auto;
   }
 }
