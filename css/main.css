@@ -65,30 +65,42 @@ a {
   font-family: 'DigitalDream';
   color: #fff;
   position: relative;
-  height: 200px;
+  height: 209px;
   width: 325px;
   margin: auto;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   z-index: 2;
+  text-shadow: -3px 3px 2px rgba(0, 0, 0, .5);
 }
 
 .logo span {
   position: absolute;
   font-size: 175px;
+  line-height: 200px;
 }
 
 .logo .first-bracket {
   left: 0;
+  top: 0;
 }
 
 .logo .middle-s {
   left: 115px;
-  bottom: 35px;
+  bottom: 10px;
   font-size: 125px;
 }
 
 .logo .second-bracket {
   left: 195px;
+}
+
+.logo .name {
+  position: absolute;
+  bottom: -70px;
+  left: 5px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .intro {
