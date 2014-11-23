@@ -8,6 +8,10 @@ a {
   color: #F39C12;
 }
 
+a:hover {
+  color: #3498DB;
+}
+
 .navbar-brand {
   line-height: 12px;
   font-family: 'Pacifico', cursive;
@@ -53,7 +57,11 @@ a {
 
 .in .nav-pills, .collapsing .nav-pills {
   margin-right: 0;
-  background: rgba(0,0,0,.5);
+  padding: 0;
+}
+
+.navbar-inverse .navbar-collapse {
+  border: none;
 }
 
 .in .nav>li, .collapsing .nav>li {
@@ -68,7 +76,6 @@ a {
   height: 209px;
   width: 325px;
   margin: auto;
-  /* margin-top: 50px; */
   z-index: 2;
   text-shadow: -3px 3px 2px rgba(0, 0, 0, .5);
 }
@@ -131,14 +138,44 @@ a {
   padding: 25px;
 }
 
-.content .col-md-8 {
+.bio, .project, .pictures {
+  padding: 25px 0;
+}
+
+.project .fa {
+  font-size: 150px;
+}
+
+.bio h5, .project h5 {
+  margin-top: 0;
+}
+
+.project button .fa {
+  font-size: 25px;
+  padding-left: 5px;
+}
+
+
+.divider-right {
   border-right: 1px solid #F39C12;
+}
+
+.divider-top {
+  border-top: 1px solid #F39C12;
+  margin-top: 25px;
+  padding-top: 25px;
+}
+
+.divider-bottom {
+  border-bottom: 1px solid #F39C12;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 #video {
   position: absolute;
   width: 100%;
-  top: -130px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -160,7 +197,18 @@ footer {
 
 @media (max-width: 1024px) {
   #video {
-    left: -350px;;
     width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    position: static;
+  }
+}
+
+@media (max-width: 991px) {
+  .divider-right {
+    border: none;
   }
 }
