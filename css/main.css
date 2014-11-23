@@ -69,6 +69,10 @@ a:hover {
   padding: 10px;
 }
 
+.navbar-inverse .navbar-toggle:hover:before, .navbar-inverse .navbar-toggle:focus:before {
+  color: #F39C12;
+}
+
 .logo {
   font-family: 'DigitalDream';
   color: #fff;
@@ -142,19 +146,23 @@ a:hover {
   padding: 25px 0;
 }
 
-.project .fa {
+.project .col-md-2 .fa {
   font-size: 150px;
+  margin-bottom: 15px;
 }
 
 .bio h5, .project h5 {
   margin-top: 0;
 }
 
+.bio img {
+  margin-bottom: 15px;
+}
+
 .project button .fa {
   font-size: 25px;
   padding-left: 5px;
 }
-
 
 .divider-right {
   border-right: 1px solid #F39C12;
